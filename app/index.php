@@ -15,7 +15,48 @@ $APPLICATION->SetTitle("Корпорация бодрости");
       <img class="logo index" src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x">
     </picture>
   </header>
-  <div id="fullpage" class="main">
+
+  <div class="modal">
+    <div class="modal__inner">
+      <div class="contacts__item">
+        <div class="modal__close"></div>
+        <h2 class="contacts__item-title">Напиши нам</h2>
+        <form class="contacts__form" action="" method="POST" id="ajax_modal">
+          <div class="contacts__input-box">
+            <input type="text" name="user_name" value="" size="40" class="contacts__input contacts__input-name"
+              id="modal__input-name" aria-required="true" aria-invalid="false" placeholder=" " autocomplete="off">
+            <label for="modal__input-name" class="contacts__input-label">ФИО</label>
+          </div>
+          <div class="contacts__input-box">
+            <input type="tel" name="user_phone" value="" id="modal__input-phone"
+              class="contacts__input contacts__input-phone" size="40" placeholder=" " data-mask="_ (___) ___-__-__"
+              autocomplete="off">
+            <label for="modal__input-phone" class="contacts__input-label">Телефон</label>
+          </div>
+          <div class="contacts__input-box">
+            <input type="email" name="user_email" value="" size="40" class="contacts__input contacts__input-email"
+              id="modal__input-email" aria-invalid="false" placeholder=" " autocomplete="off">
+            <label for="modal__input-email" class="contacts__input-label">E-mail</label>
+          </div>
+          <div class="contacts__input-box">
+            <textarea name="user_text" cols="40" rows="10" class="contacts__input contacts__input-textarea"
+              id="modal__input-textarea" aria-required="true" aria-invalid="false" placeholder=" "
+              autocomplete="off"></textarea>
+            <label for="modal__input-textarea" class="contacts__input-label">Сообщение</label>
+          </div>
+          <button class="contacts__input-btn btn-black" id="btn-ajax-modal" type="button">отправить</button>
+        </form>
+      </div>
+      <div class="modal__result">
+        <h2 class="modal__result-title">Заявка отправлена</h2>
+        <div class="modal__result-text">
+          Наши менеджеры уже начали<br>состязаться за возможность<br>поработать с Вами!<br>Скоро они с Вами свяжутся :)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="fullpage" class="main">
     <section class="section slide-1">
       <div class="container">
         <div class="slide-1__line slide-1__line-1" data-speed="20"></div>
@@ -26,8 +67,8 @@ $APPLICATION->SetTitle("Корпорация бодрости");
         <div class="slide-1__line slide-1__line-6" data-speed="120"></div>
         <div class="slide-1__line slide-1__line-7" data-speed="140"></div>
         <div class="arrow-down__container">
-          <div class="arrow-down__text">как?</div>
-          <div class="arrow-down__box">
+          <div class="arrow-down__text" title="Скролль страницу">как?</div>
+          <div class="arrow-down__box" title="Скролль страницу">
             <div class="arrow-down__inner">
               <div class="arrow-down__dot-1"></div>
               <div class="arrow-down__dot-2"></div>
@@ -218,19 +259,22 @@ $APPLICATION->SetTitle("Корпорация бодрости");
                     <ul class="calculator-places list-inline">
                       <li>
                         <div class="radio">
-                          <input type="radio" name="calculator-places" value="tc" id="calculator-place1" checked="checked">
+                          <input type="radio" name="calculator-places" value="tc" id="calculator-place1"
+                            checked="checked">
                           <label for="calculator-place1">Торговый центр</label>
                         </div>
                       </li>
                       <li>
                         <div class="radio">
-                          <input type="radio" name="calculator-places" value="bc" id="calculator-place2" checked="checked">
+                          <input type="radio" name="calculator-places" value="bc" id="calculator-place2"
+                            checked="checked">
                           <label for="calculator-place2">Бизнес-центр</label>
                         </div>
                       </li>
                       <li>
                         <div class="radio">
-                          <input type="radio" name="calculator-places" value="street" id="calculator-place3" checked="checked">
+                          <input type="radio" name="calculator-places" value="street" id="calculator-place3"
+                            checked="checked">
                           <label for="calculator-place3">Улица </label>
                         </div>
                       </li>
@@ -273,7 +317,8 @@ $APPLICATION->SetTitle("Корпорация бодрости");
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                   <div class="d-flex align-items-center h-100">
                     <div class="w-100 text-center">
-                      <svg class="calculator-profit" width="300" height="300" viewBox="0 0 300 300" aria-labelledby="" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="calculator-profit" width="300" height="300" viewBox="0 0 300 300" aria-labelledby=""
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                         <circle class="calculator-profit__circle" r="130" cx="150" cy="150"></circle>
                         <circle class="calculator-profit__glow" r="130" cx="150" cy="150"></circle>
                         <text class="calculator-profit__number" x="50%" y="50%">635520 руб</text>
@@ -334,7 +379,9 @@ $APPLICATION->SetTitle("Корпорация бодрости");
                       </tbody>
                     </table>
                     <div class="button">
-                      <button class="btn btn-black open-form" id="btnform32" data-fancybox data-type="ajax" data-src="/ajax/nform32.php" data-touch="false" data-hideOnOverlayClick="false" href="javascript:;" type="button">Оставить заявку</button>
+                      <button class="btn btn-black open-form" id="btnform32" data-fancybox data-type="ajax"
+                        data-src="/ajax/nform32.php" data-touch="false" data-hideOnOverlayClick="false"
+                        href="javascript:;" type="button">Оставить заявку</button>
                     </div>
                   </div>
                 </div>
@@ -382,22 +429,27 @@ $APPLICATION->SetTitle("Корпорация бодрости");
             <h2 class="contacts__item-title">Контакты</h2>
             <div class="contacts__item-line">
               <picture>
-                <source srcset="assets/img/contacts/mail-small@2x.webp 2x, assets/img/contacts/mail-small.webp 1x" type="image/webp">
-                <img class="contacts__item-img" src="assets/img/contacts/mail-small.png" srcset="assets/img/contacts/mail-small@2x.png 2x" alt="mail">
+                <source srcset="assets/img/contacts/mail-small@2x.webp 2x, assets/img/contacts/mail-small.webp 1x"
+                  type="image/webp">
+                <img class="contacts__item-img" src="assets/img/contacts/mail-small.png"
+                  srcset="assets/img/contacts/mail-small@2x.png 2x" alt="mail">
               </picture>
               <a class="contacts__item-text" href="mailto:feedback@bodryi-den.ru">feedback@bodryi-den.ru</a>
             </div>
             <div class="contacts__item-line">
               <picture>
-                <source srcset="assets/img/contacts/phone@2x.webp 2x, assets/img/contacts/phone.webp 1x" type="image/webp">
-                <img class="contacts__item-img" src="assets/img/contacts/phone.png" srcset="assets/img/contacts/phone@2x.png 2x" alt="phone">
+                <source srcset="assets/img/contacts/phone@2x.webp 2x, assets/img/contacts/phone.webp 1x"
+                  type="image/webp">
+                <img class="contacts__item-img" src="assets/img/contacts/phone.png"
+                  srcset="assets/img/contacts/phone@2x.png 2x" alt="phone">
               </picture>
               <a class="contacts__item-text" href="tel:+7-383-375-00-24">+7-383-375-00-24</a>
             </div>
             <div class="contacts__item-line">
               <picture>
                 <source srcset="assets/img/contacts/map@2x.webp 2x, assets/img/contacts/map.webp 1x" type="image/webp">
-                <img class="contacts__item-img" src="assets/img/contacts/map.png" srcset="assets/img/contacts/map@2x.png 2x" alt="map">
+                <img class="contacts__item-img" src="assets/img/contacts/map.png"
+                  srcset="assets/img/contacts/map@2x.png 2x" alt="map">
               </picture>
               <a class="contacts__item-text" href="https://go.2gis.com/jj61vf" target="_blank">г. Новосибирск<br>ул.
                 Красный проспект,
@@ -410,19 +462,26 @@ $APPLICATION->SetTitle("Корпорация бодрости");
             <h2 class="contacts__item-title">Напиши нам</h2>
             <form class="contacts__form" action="" method="POST" id="ajax_form">
               <div class="contacts__input-box">
-                <input type="text" name="user_name" value="" size="40" class="contacts__input contacts__input-name" id="contacts__input-name" aria-required="true" aria-invalid="false" placeholder=" " autocomplete="off">
+                <input type="text" name="user_name" value="" size="40" class="contacts__input contacts__input-name"
+                  id="contacts__input-name" aria-required="true" aria-invalid="false" placeholder=" "
+                  autocomplete="off">
                 <label for="contacts__input-name" class="contacts__input-label">ФИО</label>
               </div>
               <div class="contacts__input-box">
-                <input type="tel" name="user_phone" value="" id="contacts__input-phone" class="contacts__input contacts__input-phone" size="40" placeholder=" " data-mask="_ (___) ___-__-__" autocomplete="off">
+                <input type="tel" name="user_phone" value="" id="contacts__input-phone"
+                  class="contacts__input contacts__input-phone" size="40" placeholder=" " data-mask="_ (___) ___-__-__"
+                  autocomplete="off">
                 <label for="contacts__input-phone" class="contacts__input-label">Телефон</label>
               </div>
               <div class="contacts__input-box">
-                <input type="email" name="user_email" value="" size="40" class="contacts__input contacts__input-email" id="contacts__input-email" aria-invalid="false" placeholder=" " autocomplete="off">
+                <input type="email" name="user_email" value="" size="40" class="contacts__input contacts__input-email"
+                  id="contacts__input-email" aria-invalid="false" placeholder=" " autocomplete="off">
                 <label for="contacts__input-email" class="contacts__input-label">E-mail</label>
               </div>
               <div class="contacts__input-box">
-                <textarea name="user_text" cols="40" rows="10" class="contacts__input contacts__input-textarea" id="contacts__input-textarea" aria-required="true" aria-invalid="false" placeholder=" " autocomplete="off"></textarea>
+                <textarea name="user_text" cols="40" rows="10" class="contacts__input contacts__input-textarea"
+                  id="contacts__input-textarea" aria-required="true" aria-invalid="false" placeholder=" "
+                  autocomplete="off"></textarea>
                 <label for="contacts__input-textarea" class="contacts__input-label">Сообщение</label>
               </div>
               <button class="contacts__input-btn btn-black" id="btn-ajax-form" type="button">отправить</button>
@@ -432,47 +491,9 @@ $APPLICATION->SetTitle("Корпорация бодрости");
         </div><!-- .contacts__items -->
       </div>
     </section>
-  </div>
-
-  <div class="modal">
-    <div class="modal__inner">
-
-      <div class="contacts__item">
-        <div class="modal__close"></div>
-        <h2 class="contacts__item-title">Напиши нам</h2>
-        <form class="contacts__form" action="" method="POST" id="ajax_modal">
-          <div class="contacts__input-box">
-            <input type="text" name="user_name" value="" size="40" class="contacts__input contacts__input-name" id="modal__input-name" aria-required="true" aria-invalid="false" placeholder=" " autocomplete="off">
-            <label for="modal__input-name" class="contacts__input-label">ФИО</label>
-          </div>
-          <div class="contacts__input-box">
-            <input type="tel" name="user_phone" value="" id="modal__input-phone" class="contacts__input contacts__input-phone" size="40" placeholder=" " data-mask="_ (___) ___-__-__" autocomplete="off">
-            <label for="modal__input-phone" class="contacts__input-label">Телефон</label>
-          </div>
-          <div class="contacts__input-box">
-            <input type="email" name="user_email" value="" size="40" class="contacts__input contacts__input-email" id="modal__input-email" aria-invalid="false" placeholder=" " autocomplete="off">
-            <label for="modal__input-email" class="contacts__input-label">E-mail</label>
-          </div>
-          <div class="contacts__input-box">
-            <textarea name="user_text" cols="40" rows="10" class="contacts__input contacts__input-textarea" id="modal__input-textarea" aria-required="true" aria-invalid="false" placeholder=" " autocomplete="off"></textarea>
-            <label for="modal__input-textarea" class="contacts__input-label">Сообщение</label>
-          </div>
-          <button class="contacts__input-btn btn-black" id="btn-ajax-modal" type="button">отправить</button>
-        </form>
-      </div>
-
-
-      <div class="modal__result">
-        <h2 class="modal__result-title">Заявка отправлена</h2>
-        <div class="modal__result-text">
-          Наши менеджеры уже начали<br>состязаться за возможность<br>поработать с Вами!<br>Скоро они с Вами свяжутся :)
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
 
 </body>
-
 
 <script type="text/javascript" src="assets/js/main.js"></script>
 

@@ -84,8 +84,8 @@ a {
 #fp-nav {
   top: calc(50vh - 150px);
   left: 15px;
-  width: 0;
-  transform: rotateX(180deg);
+  width: min-content;
+  transform: rotate(180deg);
   z-index: 9;
 }
 #fp-nav ul li a span,
@@ -177,6 +177,13 @@ body.ready .fp-slidesNav ul li a::before {
 .fp-slidesNav ul li a span {
   left: 0;
   top: 0;
+  transition: background-color 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $maincolor;
+    }
+  }
 }
 //===========fullpage end============
 body {

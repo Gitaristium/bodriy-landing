@@ -8,7 +8,6 @@
   background: rgb(154, 222, 190);
   background: radial-gradient(circle at 70% 15%, #9adebe 15%, #82ff83 63%);
   opacity: 0;
-  transition: opacity 1s;
   pointer-events: none;
   &.active {
     opacity: 1;
@@ -138,4 +137,7 @@
     border-radius: 5vmin;
     padding: 4vmin;
   }
+}
+body.ready .modal {
+  transition: opacity 1s;
 }
