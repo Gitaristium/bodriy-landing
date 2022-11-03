@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "animate.css": "^4.1.1",
     "browser-sync": "^2.27.5",
-    "fullpage.js": "^3.0.9",
+    "fullpage.js": ">=4.0.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-changed": "^4.0.3",
@@ -32,6 +32,7 @@
     "del": "^6.0.0",
     "js-cookie": "^2.2.1",
     "normalize.css": "^8.0.1",
-    "wnumb": "^1.2.0"
+    "wnumb": "^1.2.0",
+    "fullpage.js": ">=4.0.5"
   }
 }
