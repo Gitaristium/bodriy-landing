@@ -1,0 +1,7 @@
+.slide {
+  &__title {
+    font-size: calc(24px + 21 * (100vw - 320px) / 1600);
+    text-transform: uppercase;
+    transition: 0.1s;
+  }
+}

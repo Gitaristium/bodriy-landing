@@ -1,0 +1,322 @@
+.slide-3 {
+  background: #b5fee5;
+
+  &__content {
+    text-align: right;
+  }
+
+  &__title {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &--span {
+      position: absolute;
+      display: block;
+      font-size: 7vw;
+      font-weight: 600;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      overflow: hidden;
+      span {
+        position: relative;
+        display: block;
+        font-size: inherit;
+        font-weight: inherit;
+      }
+    }
+    &--span-1 {
+      span {
+        transform: translateX(-100%);
+      }
+    }
+    &--span-2 {
+      span {
+        transform: translateX(100%);
+      }
+    }
+    &--span-3 {
+      span {
+        transform: translateY(-110%);
+      }
+    }
+    &--span-4 {
+      span {
+        transform: translateY(110%);
+        transform-origin: bottom;
+      }
+    }
+    &--span-5 {
+      overflow: visible;
+      span {
+        transform: scale(0);
+      }
+    }
+    &--span-6 {
+      opacity: 0;
+      margin-left: 11vw;
+    }
+  }
+  &__title-box {
+    position: relative;
+    display: block;
+    top: 0;
+    text-align: center;
+  }
+
+  &__title2 {
+    padding-top: 32vh;
+    margin-bottom: 4vh;
+    &--span {
+      position: relative;
+      display: inline-block;
+      letter-spacing: 1.9px;
+      line-height: 1.3;
+      font-size: calc(20px + 25 * (100vw - 320px) / 1600);
+      // top: 10vh;
+      right: -3vw;
+      opacity: 0;
+      transition: 0s 0.5s;
+    }
+  }
+  &__link {
+    position: relative;
+    top: 3vh;
+    opacity: 0;
+    transition: 0s 0.5s;
+  }
+  &__text {
+    position: relative;
+    font-size: calc(14px + 14 * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.3;
+    font-weight: 700;
+    border-top: 18px solid #000;
+    border-right: 18px solid #000;
+    border-bottom: 18px solid #000;
+    border-radius: 0 100px 100px 0;
+    padding: 40px;
+    padding-right: 60px;
+    margin-right: 34%;
+    margin-left: -10vw;
+    z-index: 1;
+    margin-top: -88px;
+    left: -10vh;
+    opacity: 0;
+    transition: 0s 0.5s;
+    span {
+      position: relative;
+      font-size: inherit;
+      display: inline-block;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        right: 0;
+        width: 115%;
+        height: 100%;
+        top: 9px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+section.animation .slide-3__title2--span-1 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 9.5s, right 1s 9.5s, opacity 1s 9.5s;
+}
+section.animation .slide-3__title2--span-2 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 9.7s, right 1s 9.7s, opacity 1s 9.7s;
+}
+section.animation .slide-3__title2--span-3 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 9.9s, right 1s 9.9s, opacity 1s 9.9s;
+}
+section.animation .slide-3__title2--span-4 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 10.1s, right 1s 10.1s, opacity 1s 10.1s;
+}
+section.animation .slide-3__title2--span-5 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 10.3s, right 1s 10.3s, opacity 1s 10.3s;
+}
+section.animation .slide-3__title2--span-6 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 10.5s, right 1s 10.5s, opacity 1s 10.5s;
+}
+section.animation .slide-3__title2--span-7 {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 10.7s, right 1s 10.7s, opacity 1s 10.7s;
+}
+section.animation .slide-3__link {
+  top: 0;
+  opacity: 1;
+  transition: all 0.1s, top 1s 12.6s, opacity 1s 12.6s;
+}
+section.animation .slide-3__text {
+  left: 0;
+  opacity: 1;
+  transition: all 0.1s, left 1s 11.1s, opacity 1s 11.1s;
+}
+// ------------------
+section.animation .slide-3__title--span-1 span {
+  animation: slide3span1 3s 1s forwards;
+}
+section.animation .slide-3__title--span-6 {
+  animation: slide3span6 1s 2s forwards;
+}
+section.animation .slide-3__title--span-2 span {
+  animation: slide3span2 3s 2.5s forwards ease-in-out;
+}
+section.animation .slide-3__title--span-3 span {
+  animation: slide3span3 2s 4.5s forwards ease-in-out;
+}
+section.animation .slide-3__title--span-4 span {
+  animation: slide3span4 2s 5.5s forwards ease-in-out;
+}
+section.animation .slide-3__title--span-5 span {
+  animation: slide3span5 2.2s 7.5s forwards ease-out;
+}
+
+@keyframes slide3span1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  77% {
+    transform: translateX(0%);
+    transition-timing-function: linear;
+  }
+  100% {
+    transform: translateX(-130%);
+    transition-timing-function: linear;
+  }
+}
+@keyframes slide3span6 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    color: #000;
+  }
+  40% {
+    opacity: 1;
+    color: $maincolor;
+  }
+  60% {
+    opacity: 1;
+    color: #000;
+  }
+  80% {
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    opacity: 0;
+    color: #fff;
+  }
+}
+@keyframes slide3span2 {
+  0% {
+    transform: translateX(100%);
+  }
+  66% {
+    transform: translateX(0%) translateY(0);
+  }
+  75% {
+    transform: translateX(0%) translateY(0);
+  }
+  100% {
+    transform: translateY(110%);
+  }
+}
+@keyframes slide3span3 {
+  0% {
+    transform: translateY(-110%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  63% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-110%);
+  }
+}
+@keyframes slide3span4 {
+  0% {
+    transform: translateY(110%);
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+}
+@keyframes slide3span5 {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  66% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  76% {
+    transform: scale(1);
+    color: inherit;
+  }
+  77% {
+    transform: scale(1.2);
+    color: $maincolor;
+  }
+  87% {
+    transform: scale(1.2);
+    color: inherit;
+  }
+  88% {
+    transform: scale(1.4);
+    color: $maincolor;
+    opacity: 1;
+  }
+  98% {
+    transform: scale(1.4);
+    color: inherit;
+  }
+  99% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(2);
+    color: $maincolor;
+    opacity: 0;
+  }
+}

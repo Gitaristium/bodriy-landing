@@ -1,0 +1,341 @@
+@media (min-width: 1950px) {
+  .modal__close,
+  .modal__close::before,
+  .modal__close::after,
+  .contacts__item-title {
+    font-size: calc(24px + 10 * (100vw - 320px) / 1600);
+  }
+  .slide-6__title {
+    font-size: calc(16px + 23 * (100vw - 320px) / 1600);
+  }
+}
+@media (max-width: 1200px) {
+  .slide-2 {
+    &__title2 {
+      padding-top: 20vh;
+    }
+    &__text {
+      margin-top: 15vh;
+    }
+  }
+  .slide-3 {
+    &__title2 {
+      padding-top: 20vh;
+    }
+    &__text {
+      margin-top: 15vh;
+    }
+  }
+  .slide-4 {
+    &__content {
+      flex-direction: column;
+    }
+    &__title {
+      margin-top: 20vh;
+      margin-bottom: 5vh;
+    }
+    &__rounds {
+      height: 100%;
+      margin-left: 15vw;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .contacts {
+    &__items {
+      gap: 5vw;
+      padding-top: 15vh;
+    }
+  }
+  .slide-5 {
+    &__prompt {
+      font-size: calc(30px + 90 * (100vw - 320px) / 1600);
+    }
+    &__content {
+      // padding-top: 10vh;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      font-size: calc(24px + 60 * (100vw - 320px) / 1600);
+    }
+    &__desc {
+    }
+    &__desc-item span {
+      font-size: calc(44px + 96 * (100vw - 320px) / 1600);
+    }
+    &__desc-item p {
+      font-size: calc(19px + 40 * (100vw - 320px) / 1600);
+    }
+  }
+  .slide-7 {
+    &__content {
+      grid-template-areas:
+        "a b"
+        "c c";
+    }
+    &__img-box {
+      &--1 {
+        // transform: translate(-100%, -100%);
+      }
+      &--2 {
+        // transform: translate(100%, -100%);
+      }
+      &--3 {
+        // transform: translate(100%, 100%);
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .contacts {
+    &__items {
+      flex-wrap: wrap;
+      padding: 10vh 0;
+    }
+    &__item {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    &__input-btn {
+      max-width: 100%;
+    }
+    &__item-title {
+      margin-bottom: 5vh;
+    }
+    &__item-line {
+      margin-bottom: 3vh;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    width: 100%;
+    // margin: -5vh;
+    top: 0;
+    left: 0;
+    padding: 3vh 8vw;
+    text-align: right;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .logo {
+    margin-left: auto;
+    margin-right: -30px;
+  }
+  body.ready #fp-nav {
+    left: 0;
+    transform: rotateX(180deg) scale(0.5);
+  }
+  .slide-1 {
+    &__line-3 {
+      padding: 2% 10%;
+    }
+  }
+  .slide-2 {
+    &__title2 {
+      padding-top: 20vh;
+    }
+    &__text {
+      margin-top: 15vh;
+      margin-left: 0%;
+      padding: 5vw 10vw;
+      border-top: 10px solid #000;
+      border-left: 10px solid #000;
+      border-bottom: 10px solid #000;
+      & span::before {
+        top: 6px;
+        width: 100%;
+      }
+    }
+  }
+  .slide-3 {
+    &__content {
+      text-align: left;
+    }
+    &__title2 {
+      padding-top: 20vh;
+    }
+    &__text {
+      margin-top: 15vh;
+      margin-right: 0%;
+      padding: 5vw 7vw;
+      border-top: 10px solid #000;
+      border-right: 10px solid #000;
+      border-bottom: 10px solid #000;
+      text-align: right;
+      & span::before {
+        top: 4px;
+        width: 100%;
+      }
+    }
+  }
+  .slide-4 {
+    &__content {
+      flex-direction: column;
+    }
+    &__title {
+      margin-top: 20vh;
+      margin-bottom: 5vh;
+    }
+    &__rounds {
+      height: 100%;
+      margin-left: 0;
+    }
+    &__round-inner {
+      &::after {
+        border: 2vw solid #000;
+      }
+      &::before {
+        border: 2vw solid #fff;
+      }
+    }
+    &__round-1 {
+      width: 26vw;
+      height: 26vw;
+      top: 23.5vw;
+      left: 2.5vw;
+      span {
+        font-size: 7vw;
+        line-height: 6vw;
+      }
+      p {
+        font-size: 5vw;
+        line-height: 4.5vw;
+      }
+      & .slide-4__round-inner::before {
+        top: 1.6vw;
+        left: -1.2vw;
+      }
+    }
+    &__round-2 {
+      width: 28.3vw;
+      height: 28.3vw;
+      left: 30.3vw;
+      span {
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+      }
+      p {
+        font-size: 4vw;
+        line-height: 4vw;
+      }
+      & .slide-4__round-inner::before {
+        top: 2vw;
+        left: -0.5vw;
+      }
+    }
+    &__round-3 {
+      width: 25.5vw;
+      height: 25.5vw;
+      top: 51.5vw;
+      left: 22.7vw;
+      p {
+        font-size: 2.7vw;
+        line-height: 3vw;
+      }
+      & .slide-4__round-inner::before {
+        top: -1.5vw;
+        left: 1.2vw;
+      }
+    }
+    &__round-4 {
+      width: 28.3vw;
+      height: 28.3vw;
+      top: 30vw;
+      left: 50.7vw;
+      p {
+        font-size: 2.7vw;
+        line-height: 3vw;
+      }
+      & .slide-4__round-inner::before {
+        top: -1.7vw;
+        left: -1.5vw;
+      }
+    }
+    &__round-5 {
+      width: 25.5vw;
+      height: 25.5vw;
+      top: 65.5vw;
+      left: 58.5vw;
+      p {
+        font-size: 2.7vw;
+        line-height: 3vw;
+      }
+      & .slide-4__round-inner::before {
+        top: 1.2vw;
+        left: 1.5vw;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  body.ready .slide-1__line-3 {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  input,
+  textarea,
+  [contenteditable] {
+    padding: 5px 16px;
+  }
+  .container {
+    padding: 0 8vw;
+  }
+  .slide-7 {
+    &__inner {
+      padding: 15vh 0 5vh;
+    }
+    &__content {
+      padding: 0 5vw;
+      grid-template: repeat(3, 33.3%) / 100%;
+      grid-template-areas:
+        "a"
+        "b"
+        "c";
+    }
+    &__img-box {
+      &--1 {
+        // transform: translate(-110%, 0);
+      }
+      &--2 {
+        // transform: translate(110%, 0);
+      }
+      &--3 {
+        // transform: translate(-110%, 0);
+      }
+    }
+    &__title {
+      right: 15vw;
+    }
+  }
+  section.animation {
+    & .slide-7__title {
+      right: 3vw;
+    }
+  }
+  .contacts {
+    &__input-label {
+      padding: 5px 16px;
+    }
+    &__input-textarea {
+      height: 90px;
+      margin-bottom: 5vh;
+    }
+    &__input.error-mail ~ label::after {
+      bottom: -40px;
+    }
+    &__items {
+      padding: 15vh 0 10vh;
+    }
+    &__item-img {
+      transform: scale(0.7);
+    }
+    &__item-line {
+      gap: 7px;
+    }
+  }
+}
