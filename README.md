@@ -1,5 +1,6 @@
 # bodriy-landing
- Бодрый День - лэндинг
+ Бодрый День - лэндинг<br>
+ view - https://clck.ru/32ZzQr
 
 #en
 <p>Landing of the Russian franchise network of coffee shops "Cheerful Day" to attract new franchisees. My job was to turn the provided design into something "live" with animation.</p>
